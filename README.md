@@ -4,6 +4,8 @@ Project was done for Princeton's Algorithm Coursera Course PART I. The specifica
 To implement a deque, I used a Linked List implementation, though upon researching I have found more memory-efficient solutions using arrays.
 To implement the randomized queue and particularly the randomized dequeue operation, I created an invariant that all the elements of the array would be in the first n slots and I could randomly choose one to remove, and replace that with the last slot. (Look at the code for more detail).
 
+The warnings in the test results should be ignored, because unfortunately, a feature of Java is that generic arrays can only be created through some weird casting techniques as arrays in Java are covariant whereas generics in Java are invariant. They are quite incompatible and that is why the warning occurs.
+
 ## Test Results
 See the Assessment Guide for information on how to interpret this report.
 
